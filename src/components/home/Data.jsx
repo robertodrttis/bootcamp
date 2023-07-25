@@ -64,7 +64,7 @@ Meu nome é José Roberto e sou um desenvolvedor Full Stack apaixonado por tecno
 
       </p>
 
-      <a href="#contact" className="button button--flex">
+      <a href="https://www.instagram.com/roberto_rf07/" className="button button--flex">
        Meu instagram
         <svg
           class="button__icon"
