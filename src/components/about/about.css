@@ -1,93 +1,209 @@
 .about__container {
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    column-gap: 4rem;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 4rem;
+  background-color: black !important;
 }
 
 .about__img {
-    width: 350px;
-    border-radius: 1.5rem;
-    justify-self: center;
+  width: 350px;
+  border-radius: 1.5rem;
+  justify-self: center;
 }
 
 .about__info {
-    grid-template-columns: repeat(3, 140px);
-    gap: 0.5rem;
-    margin-bottom: var(--mb-2);
+  grid-template-columns: repeat(3, 140px);
+  gap: 0.5rem;
+  margin-bottom: var(--mb-2);
 }
 
 .about__box {
-    background-color: var(--container-color);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 0.75rem;
-    text-align: center;
-    padding: 1rem 0.25rem;
+  background-color: var(--container-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.75rem;
+  text-align: center;
+  padding: 1rem 0.25rem;
 }
 
 .about__icon {
-    font-size: 1.5rem;
-    color: var(--title-color);
-    margin-bottom: var(--mb-0-5);
+  font-size: 1.5rem;
+  color: var(--title-color);
+  margin-bottom: var(--mb-0-5);
 }
 
 .about__title {
-    font-size: var(--small-font-size);
-    font-weight: var(--font-medium);
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
 }
 
 .about__subtitle {
-    font-size: var(--tiny-font-size);
+  font-size: var(--tiny-font-size);
 }
 
 .about__description {
-    padding: 0 4rem 0 0;
-    margin-bottom: var(--mb-2-5);
+  padding: 0 4rem 0 0;
+  margin-bottom: var(--mb-2-5);
+}
+.about-calendar {
+  margin-left: 350px;
+  margin-top: 25px;
+}
+.about {
+  overflow-x: hidden;
+}
+.col-event {
+  position: relative;
+  top: 10px;
+  
+}
+.item-layout{
+    margin-left: 132px;
+    padding-right: 241px !important;
+}
+.info {
+  position: relative;
+  top: 650px;
+}
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+/* Estilização do Calendário */
+.about-calendar {
+    border: none !important;
+    max-width: 400px; /* Limite de largura */
+    margin: 20px auto; /* Centraliza na página */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ao redor do calendário */
+}
+
+/* Estilização do cabeçalho do calendário */
+.about-calendar abbr {
+    text-decoration: none !important;
+    color: #333 !important;
+    font-weight: bold !important;
+}
+
+/* Estilização dos dias da semana */
+.about-calendar .react-calendar__month-view__weekdays__weekday abbr {
+    font-size: 0.9em !important;
+    color: #555 !important;
+}
+
+/* Estilização dos dias do calendário */
+.about-calendar .react-calendar__tile {
+    border-radius: 50%; /* Torna os dias circulares */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+.about-calendar .react-calendar__tile:hover {
+    background-color: #f5f5f5 !important; /* Cor de fundo ao passar o mouse */
+}
+
+.about-calendar .react-calendar__tile--active {
+    background-color: #FF4500 !important; /* Cor de fundo para o dia selecionado */
+    color: #fff !important;
+}
+
+/* Estilização do botão de navegação do mês */
+.about-calendar .react-calendar__navigation button {
+    background-color: transparent !important;
+    color: #666 !important;
+    font-size: 1.2em !important;
+}
+
+/* Estilização do nome do mês */
+.about-calendar .react-calendar__navigation__label__labelText {
+    font-weight: bold !important;
+    color: #444 !important;
+}
+
+.event-text{
+    text-align: center !important;
+}
+
+/* Sua classe para o calendário */
+.about-calendar {
+    width: 100%; /* Garante que o calendário ocupe a largura total do contêiner */
+    margin: 0 auto; /* Centraliza o calendário */
+}
+
+/* Sua classe para o texto do evento */
+.event-text {
+    font-size: 1.5rem; /* Ajuste conforme necessário */
+    text-align: center;
+    font-weight: 500;
+    color: #000000;
+    
+    text-decoration: underline;
+}
+.text-orange{
+    color: #FF4500;
+}
+
+/* Sua classe para a posição do evento */
+.event-position {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+/* Para telas menores, você pode querer ajustar o tamanho do texto e outros estilos */
+@media (max-width: 576px) {
+    .event-text {
+        font-size: 0.8rem;
+    }
+    .item-layout{
+        margin-top: 50px;
+        margin-left: 72px;
+        padding-right: 141px !important;
+    }
+    /* Adicione mais estilos específicos para dispositivos móveis, se necessário */
 }
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {
-    .about__container {
-        grid-template-columns: 1fr;
-        row-gap: 2.5rem;
-    }
-
-    .about__img {
-        width: 220px;
-    }
-
-    .about__box {
-        padding: 0.75rem 0.5rem;
-    }
-
-    .about__data {
-        text-align: center;
-    }
-
-    .about__info {
-        justify-content: center;
-    }
-
-    .about__description {
-        padding: 0 5rem;
-        margin-bottom: 2rem;
-    }
+  .about__container {
+    grid-template-columns: 1fr;
+    row-gap: 2.5rem;
   }
-  
-  /* For medium devices */
-  @media screen and (max-width: 576px) {
-    .about__info {
-        grid-template-columns: repeat(2, 1fr);
-    }
 
-    .about__description {
-        padding: 0;
-    }
+  .about__img {
+    width: 220px;
   }
-  
-  /* For small devices */
-  @media screen and (max-width: 350px) {
-    .about__info {
-        grid-template-columns: repeat(2, 1fr);
-    }
+
+  .about__box {
+    padding: 0.75rem 0.5rem;
   }
+
+  .about__data {
+    text-align: center;
+  }
+
+  .about__info {
+    justify-content: center;
+  }
+
+  .about__description {
+    padding: 0 5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* For medium devices */
+@media screen and (max-width: 576px) {
+  .about__info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about__description {
+    padding: 0;
+  }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+  .about__info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

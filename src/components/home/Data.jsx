@@ -4,7 +4,7 @@ const Data = () => {
   return (
     <div className="home__data">
       <h1 className="home__title">
-        J. Roberto
+        J. Roberto - Programador Full Stack
         <svg
           width="36"
           height="36"
@@ -55,7 +55,6 @@ const Data = () => {
           ></path>
         </svg>
       </h1>
-      <h3 className="home__subtitle">Programador Full Stack</h3>
       <p className="home__description">
         Olá!
 
@@ -64,7 +63,7 @@ Meu nome é José Roberto e sou um desenvolvedor Full Stack apaixonado por tecno
 
       </p>
 
-      <a href="https://www.instagram.com/roberto_rf07/" className="button button--flex">
+      <a href="https://www.instagram.com/robertodevfront/" className="button button--flex">
        Meu instagram
         <svg
           class="button__icon"
